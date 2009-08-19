@@ -22,6 +22,7 @@
 <head profile="http://gmpg.org/xfn/11">
 	<meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
 	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+    <meta name="verify-v1" content="RO10L5Zz6a4NUCnM1WFVV/77xAw6U/QYQwi1jZxcLQY=" />
 
 	<title><?php bloginfo('name'); ?><?php wp_title(); ?></title>
 	<link rel="alternate" type="application/rss+xml" title="<?php _e('RSS 2.0 - all posts', 'inove'); ?>" href="<?php echo $feed; ?>" />

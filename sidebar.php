@@ -44,6 +44,20 @@
 			<div class="fixed"></div>
 		</div>
 	</div>
+    <!-- payment -->
+<br/>
+<script type="text/javascript"><!--
+google_ad_client = "pub-0022581396450834";
+/* 300x250, created 8/18/09 for mlb sidebar */
+google_ad_slot = "0476987671";
+google_ad_width = 300;
+google_ad_height = 250;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+	<div class="widget widget_feeds"></div>
 
 	<!-- showcase -->
 	<?php if( $options['showcase_content'] && (
@@ -64,23 +78,13 @@
 <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('north_sidebar') ) : ?>
 
 	<!-- posts -->
-	<?php
-		if (is_single()) {
-			$posts_widget_title = 'Recent Posts';
-		} else {
-			$posts_widget_title = 'Random Posts';
-		}
-	?>
+	<?php if (is_single()) : ?>
 
 	<div class="widget">
-		<h3><?php echo $posts_widget_title; ?></h3>
+		<h3>Recent Posts</h3>
 		<ul>
 			<?php
-				if (is_single()) {
-					$posts = get_posts('numberposts=10&orderby=post_date');
-				} else {
-					$posts = get_posts('numberposts=5&orderby=rand');
-				}
+			    $posts = get_posts('numberposts=10&orderby=post_date');
 				foreach($posts as $post) {
 					setup_postdata($post);
 					echo '<li><a href="' . get_permalink() . '">' . get_the_title() . '</a></li>';
@@ -89,6 +93,7 @@
 			?>
 		</ul>
 	</div>
+    <?php endif; ?>
 
 	<!-- recent comments -->
 	<?php if( function_exists('wp_recentcomments') ) : ?>
