@@ -1,7 +1,7 @@
 /*
 Theme Name: MLB Injury Report
 Theme URI: http://wordpress.org/extend/themes/inove/
-Description: Inspired by and iNove MacZone.sk, created by mg12. It is very stylish, widget supported and doesn’t require any plugin.
+Description: Pretty much is iNove MacZone.sk, created by mg12. It is very stylish, widget supported and doesn’t require any plugin.
 Version: 1.4.6
 Author: Justin Hoppensteadt
 Author URI: http://www.justinhoppensteadt.com/
@@ -213,6 +213,7 @@ textarea {
 #navigation {
 	background:#FFF;
 	border-bottom:1px solid #A6A6A6;
+	height: 32px;
 }
 #menus li {
 	display:inline;
@@ -286,6 +287,23 @@ textarea {
 }
 #searchbox .searchtip {
 	color:#999;
+}
+#rssbox, #twitbox {
+	background-position: top center;
+	width:35px;
+	height:25px;
+	display:block;
+	float:right;
+	margin-top:5px;
+	margin-right:4px !important;
+	margin-bottom:0px;
+	padding:0px 0px 0 0;
+}
+#rssbox {
+	background: url(images/rss-20.jpg) no-repeat;
+}
+#twitbox {
+	background: url(images/twitter8-21.png) no-repeat;
 }
 /* navigation END */
 

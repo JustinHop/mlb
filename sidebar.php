@@ -18,38 +18,11 @@
 <!-- sidebar north START -->
 <div id="northsidebar" class="sidebar">
 
-	<!-- feeds -->
-	<div class="widget widget_feeds">
-		<div class="content">
-			<div id="subscribe">
-				<a rel="external nofollow" id="feedrss" title="<?php _e('Subscribe to this blog...', 'inove'); ?>" href="<?php echo $feed; ?>"><?php _e('<abbr title="Really Simple Syndication">RSS</abbr>', 'inove'); ?></a>
-				<?php if($options['feed_readers']) : ?>
-					<ul id="feed_readers">
-						<li id="google_reader"><a rel="external nofollow" class="reader" title="<?php _e('Subscribe with ', 'inove'); _e('Google', 'inove'); ?>" href="http://fusion.google.com/add?feedurl=<?php echo $feed; ?>"><span><?php _e('Google', 'inove'); ?></span></a></li>
-						<li id="youdao_reader"><a rel="external nofollow" class="reader" title="<?php _e('Subscribe with ', 'inove'); _e('Youdao', 'inove'); ?>" href="http://reader.youdao.com/#url=<?php echo $feed; ?>"><span><?php _e('Youdao', 'inove'); ?></span></a></li>
-						<li id="xianguo_reader"><a rel="external nofollow" class="reader" title="<?php _e('Subscribe with ', 'inove'); _e('Xian Guo', 'inove'); ?>" href="http://www.xianguo.com/subscribe.php?url=<?php echo $feed; ?>"><span><?php _e('Xian Guo', 'inove'); ?></span></a></li>
-						<li id="zhuaxia_reader"><a rel="external nofollow" class="reader" title="<?php _e('Subscribe with ', 'inove'); _e('Zhua Xia', 'inove'); ?>" href="http://www.zhuaxia.com/add_channel.php?url=<?php echo $feed; ?>"><span><?php _e('Zhua Xia', 'inove'); ?></span></a></li>
-						<li id="yahoo_reader"><a rel="external nofollow" class="reader" title="<?php _e('Subscribe with ', 'inove'); _e('My Yahoo!', 'inove'); ?>"	href="http://add.my.yahoo.com/rss?url=<?php echo $feed; ?>"><span><?php _e('My Yahoo!', 'inove'); ?></span></a></li>
-						<li id="newsgator_reader"><a rel="external nofollow" class="reader" title="<?php _e('Subscribe with ', 'inove'); _e('newsgator', 'inove'); ?>"	href="http://www.newsgator.com/ngs/subscriber/subfext.aspx?url=<?php echo $feed; ?>"><span><?php _e('newsgator', 'inove'); ?></span></a></li>
-						<li id="bloglines_reader"><a rel="external nofollow" class="reader" title="<?php _e('Subscribe with ', 'inove'); _e('Bloglines', 'inove'); ?>"	href="http://www.bloglines.com/sub/<?php echo $feed; ?>"><span><?php _e('Bloglines', 'inove'); ?></span></a></li>
-						<li id="inezha_reader"><a rel="external nofollow" class="reader" title="<?php _e('Subscribe with ', 'inove'); _e('iNezha', 'inove'); ?>"	href="http://inezha.com/add?url=<?php echo $feed; ?>"><span><?php _e('iNezha', 'inove'); ?></span></a></li>
-					</ul>
-				<?php endif; ?>
-			</div>
-			<?php if($options['feed_email'] && $options['feed_url_email']) : ?>
-				<a rel="external nofollow" id="feedemail" title="<?php _e('Subscribe to this blog via email...', 'inove'); ?>" href="<?php echo $options['feed_url_email']; ?>"><?php _e('Email feed', 'inove'); ?></a>
-			<?php endif; if($options['twitter'] && $options['twitter_username']) : ?>
-				<a id="followme" title="<?php _e('Follow me!', 'inove'); ?>" href="http://twitter.com/<?php echo $options['twitter_username']; ?>/"><?php _e('Twitter', 'inove'); ?></a>
-			<?php endif; ?>
-			<div class="fixed"></div>
-		</div>
-	</div>
     <!-- payment -->
-<br/>
 <script type="text/javascript"><!--
 google_ad_client = "pub-0022581396450834";
-/* 300x250, created 8/18/09 for mlb sidebar */
-google_ad_slot = "0476987671";
+/* 300x250, created 8/24/09 mlb right code */
+google_ad_slot = "5893357379";
 google_ad_width = 300;
 google_ad_height = 250;
 //-->
@@ -105,12 +78,6 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 		</div>
 	<?php endif; ?>
 
-	<!-- tag cloud -->
-	<div id="tag_cloud" class="widget">
-		<h3>Tag Cloud</h3>
-		<?php wp_tag_cloud('smallest=8&largest=16'); ?>
-	</div>
-
 <?php endif; ?>
 </div>
 <!-- sidebar north END -->
@@ -119,17 +86,28 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 
 	<!-- sidebar east START -->
 	<div id="eastsidebar" class="sidebar">
-	<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('east_sidebar') ) : ?>
+    <div class="widget">
+<script type="text/javascript"><!--
+google_ad_client = "pub-0022581396450834";
+/* 120x600, created 8/24/09 mlb sidebar */
+google_ad_slot = "8886452346";
+google_ad_width = 120;
+google_ad_height = 600;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+    </div>
+	<!-- meta -->
+	<div class="widget">
+		<h3>Meta</h3>
+		<ul>
+			<?php wp_register(); ?>
+			<li><?php wp_loginout(); ?></li>
+		</ul>
+	</div>
 
-		<!-- categories -->
-		<div class="widget widget_categories">
-			<h3>Categories</h3>
-			<ul>
-				<?php wp_list_cats('sort_column=name&optioncount=0&depth=1'); ?>
-			</ul>
-		</div>
-
-	<?php endif; ?>
 	</div>
 	<!-- sidebar east END -->
 
@@ -137,11 +115,11 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 	<div id="westsidebar" class="sidebar">
 	<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('west_sidebar') ) : ?>
 
-		<!-- blogroll -->
-		<div class="widget widget_links">
-			<h3>Blogroll</h3>
+		<!-- categories -->
+		<div class="widget widget_categories">
+			<h3>Categories</h3>
 			<ul>
-				<?php wp_list_bookmarks('title_li=&categorize=0'); ?>
+				<?php wp_list_cats('sort_column=name&optioncount=0&depth=1'); ?>
 			</ul>
 		</div>
 
@@ -155,6 +133,20 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 <div id="southsidebar" class="sidebar">
 <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('south_sidebar') ) : ?>
 
+	<!-- tag cloud -->
+	<div id="tag_cloud" class="widget">
+		<h3>Tag Cloud</h3>
+		<?php wp_tag_cloud('smallest=8&largest=16'); ?>
+	</div>
+
+		<!-- blogroll -->
+		<div class="widget widget_links">
+			<h3>Blogroll</h3>
+			<ul>
+				<?php wp_list_bookmarks('title_li=&categorize=0'); ?>
+			</ul>
+		</div>
+
 	<!-- archives -->
 	<div class="widget">
 		<h3>Archives</h3>
@@ -165,15 +157,6 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 				<?php wp_get_archives('type=monthly'); ?>
 			</ul>
 		<?php endif; ?>
-	</div>
-
-	<!-- meta -->
-	<div class="widget">
-		<h3>Meta</h3>
-		<ul>
-			<?php wp_register(); ?>
-			<li><?php wp_loginout(); ?></li>
-		</ul>
 	</div>
 
 <?php endif; ?>

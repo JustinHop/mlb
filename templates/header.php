@@ -58,6 +58,8 @@
 			</form>
 		<?php endif; ?>
 	</div>
+<a href="http://feeds.feedburner.com/MlbInjuryReport" id="rssbox" title="Subscribe to our RSS feed!"></a>
+<a href="http://twitter.com/MlbInjury" id="twitbox" title="Follow us on Twitter!"></a>
 <script type="text/javascript">
 //<![CDATA[
 	var searchbox = MGJS.$("searchbox");
@@ -88,7 +90,7 @@
 //]]>
 </script>
 	<!-- searchbox END -->
-
+    
 	<div class="fixed"></div>
 </div>
 <!-- navigation END -->
