@@ -60,6 +60,7 @@
 	</div>
 <a href="http://feeds.feedburner.com/MlbInjuryReport" id="rssbox" title="Subscribe to our RSS feed!"></a>
 <a href="http://twitter.com/MlbInjury" id="twitbox" title="Follow us on Twitter!"></a>
+<a href="http://mlbinjuryreport.com/" id="mlbbox" title="Come back often!"></a>
 <script type="text/javascript">
 //<![CDATA[
 	var searchbox = MGJS.$("searchbox");

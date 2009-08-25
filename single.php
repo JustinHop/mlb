@@ -9,20 +9,6 @@
 		 &gt; <?php the_title(); ?>
 	</div>
 
-    <div class="post" id="post-ad">
-<script type="text/javascript"><!--
-google_ad_client = "pub-0022581396450834";
-/* 468x60, created 8/24/09 mlb halfbanner */
-google_ad_slot = "0281757323";
-google_ad_width = 468;
-google_ad_height = 60;
-//-->
-</script>
-<script type="text/javascript"
-src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
-</script>
-    </div>
-
 	<div class="post" id="post-<?php the_ID(); ?>">
 		<h2><?php the_title(); ?></h2>
 		<div class="info">
@@ -39,6 +25,21 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 			<?php the_content(); ?>
 			<div class="fixed"></div>
 		</div>
+<div id="post-ad">
+<a href="<?php echo get_settings('home'); ?>/"><img src="http://mlbinjuryreport.com/wp-content/themes/mlb/images/injure-60.png"></a>
+<script type="text/javascript"><!--
+google_ad_client = "pub-0022581396450834";
+/* 468x60, created 8/24/09 mlb halfbanner */
+google_ad_slot = "0281757323";
+google_ad_width = 468;
+google_ad_height = 60;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</div>
+<br/><br/>
 		<div class="under">
 			<?php if ($options['categories']) : ?><span class="categories"><?php _e('Categories: ', 'inove'); ?></span><span><?php the_category(', '); ?></span><?php endif; ?>
 			<?php if ($options['tags']) : ?><span class="tags"><?php _e('Tags: ', 'inove'); ?></span><span><?php the_tags('', ', ', ''); ?></span><?php endif; ?>

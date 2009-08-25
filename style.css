@@ -288,7 +288,7 @@ textarea {
 #searchbox .searchtip {
 	color:#999;
 }
-#rssbox, #twitbox {
+#rssbox, #twitbox, #mlbbox {
 	background-position: top center;
 	width:35px;
 	height:25px;
@@ -304,6 +304,9 @@ textarea {
 }
 #twitbox {
 	background: url(images/twitter8-21.png) no-repeat;
+}
+#mlbbox {
+	background: url(images/injure-20.png) no-repeat;
 }
 /* navigation END */
 
@@ -373,6 +376,18 @@ textarea {
 #notice a {
 	text-decoration:underline;
 }
+#post-ad {
+    float: right;
+    text-align: right;
+    width: 100%;
+}
+#bigsidevert{
+    text-align: center;
+}
+#post-ad img {
+    float: left;
+    padding-left: 15px;
+}
 .post {
 	padding-bottom:5px !important;
 	padding-bottom:15px;
@@ -381,11 +396,14 @@ textarea {
 	padding-bottom:15px !important;
 }
 .post h2 {
+    background: url(images/injure-20.png) no-repeat;
+    background-position: center left;
 	display:block;
 	margin-top:10px;
 	border-bottom:1px solid #CCC;
-	padding:0 5px 3px;
-	font-size:16px;
+	padding:0px 0px 0px 25px;
+	font-size:19px;
+	vertical-align: center;
 	font-family:Verdana,"BitStream vera Sans";
 }
 .post h2 a.title {

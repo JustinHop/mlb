@@ -159,6 +159,25 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 		<?php endif; ?>
 	</div>
 
+    <div class="widget" id="bigsidevert">
+<script type="text/javascript"><!--
+google_ad_client = "pub-0022581396450834";
+/* 160x600, created 8/24/09 for bottom of sidebar */
+google_ad_slot = "4814232503";
+google_ad_width = 160;
+google_ad_height = 600;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+    </div>
+
+<div class="widget">
+    <ul>
+        <li><a href="http://www.buzzerhut.com"><img border="0" src="http://www.buzzerhut.com/images/mainlogo_small.gif" width="154" height="42" alt="Promote Your Blog" title="Promote Your Blog"></a></li>
+    </ul>
+</div>
 <?php endif; ?>
 </div>
 <!-- sidebar south END -->
