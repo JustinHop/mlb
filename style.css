@@ -389,6 +389,8 @@ textarea {
     padding-left: 15px;
 }
 .post {
+    background: url(images/injure-50.png) no-repeat;
+    background-position: top left;
 	padding-bottom:5px !important;
 	padding-bottom:15px;
 }
@@ -396,12 +398,11 @@ textarea {
 	padding-bottom:15px !important;
 }
 .post h2 {
-    background: url(images/injure-20.png) no-repeat;
-    background-position: center left;
 	display:block;
+	margin-left: 50px;
 	margin-top:10px;
 	border-bottom:1px solid #CCC;
-	padding:0px 0px 0px 25px;
+	padding:0px 0px 0px 5px;
 	font-size:19px;
 	vertical-align: center;
 	font-family:Verdana,"BitStream vera Sans";
@@ -418,6 +419,7 @@ textarea {
 }
 .post .info {
 	margin:5px;
+	margin-left: 55px;
 }
 .post .info span.first {
 	margin-left:0;
