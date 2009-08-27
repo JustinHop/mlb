@@ -17,6 +17,7 @@
 
 <?php if (have_posts()) : while (have_posts()) : the_post(); update_post_caches($posts); ?>
 	<div class="post" id="post-<?php the_ID(); ?>">
+        <div class="mlbinjury"></div>
 		<h2><a class="title" href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h2>
 		<div class="info">
 			<span class="date"><?php the_time(__('l F d H:i:s', 'inove')) /*TODO you must fix this*/ ?> PDT</span>

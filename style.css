@@ -306,7 +306,7 @@ textarea {
 	background: url(images/twitter8-21.png) no-repeat;
 }
 #mlbbox {
-	background: url(images/injure-20.png) no-repeat;
+	background: url(images/injure-20.gif) no-repeat;
 }
 /* navigation END */
 
@@ -365,8 +365,8 @@ textarea {
 /* main START */
 #main {
 	background:#FFF url(img/main_shadow.gif) top repeat-x;
-	width:605px;
-	padding:13px 15px 15px;
+	width:633px;
+	padding:13px 0px 15px;
 	float:left;
 	overflow:hidden;
 }
@@ -388,9 +388,17 @@ textarea {
     float: left;
     padding-left: 15px;
 }
-.post {
-    background: url(images/injure-50.png) no-repeat;
+.mlbinjury {
+    height: 50px;
+    width: 50px;
+    background: url(images/injure-50.gif) no-repeat;
     background-position: top left;
+    margin-right: 5px;
+    margin-left: 5px;
+    float: left;
+}
+.post {
+    margin-bottom: 10px;
 	padding-bottom:5px !important;
 	padding-bottom:15px;
 }
@@ -399,10 +407,9 @@ textarea {
 }
 .post h2 {
 	display:block;
-	margin-left: 50px;
 	margin-top:10px;
 	border-bottom:1px solid #CCC;
-	padding:0px 0px 0px 5px;
+	padding:0px 0px 0px 15px;
 	font-size:19px;
 	vertical-align: center;
 	font-family:Verdana,"BitStream vera Sans";
@@ -419,7 +426,7 @@ textarea {
 }
 .post .info {
 	margin:5px;
-	margin-left: 55px;
+	margin-left: 15px;
 }
 .post .info span.first {
 	margin-left:0;
@@ -496,6 +503,7 @@ textarea {
 }
 .post .content {
 	padding:5px 0 0 5px;
+	margin-left: 15px;
 	line-height:145%;
 	overflow:hidden;
 }
@@ -506,7 +514,8 @@ textarea {
 	height:16px;
 	line-height:16px;
 	font-size:11px;
-	margin-bottom:10px;
+	margin-bottom:20px;
+	margin-left: 15px;
 }
 .post .under span {
 	float:left;
