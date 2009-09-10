@@ -17,20 +17,7 @@
 
 <!-- sidebar north START -->
 <div id="northsidebar" class="sidebar">
-
-    <!-- payment -->
-<script type="text/javascript"><!--
-google_ad_client = "pub-0022581396450834";
-/* 300x250, created 8/24/09 mlb right code */
-google_ad_slot = "5893357379";
-google_ad_width = 300;
-google_ad_height = 250;
-//-->
-</script>
-<script type="text/javascript"
-src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
-</script>
-	<div class="widget widget_feeds"></div>
+    <?php dynamic_sidebar( 'north_sidebar' ); ?>
 
 	<!-- showcase -->
 	<?php if( $options['showcase_content'] && (
@@ -173,12 +160,28 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 </script>
     </div>
 
+<?php endif; ?>
+
+    <!-- payment -->
+<div id="bigad" class="sidebar">
+<script type="text/javascript"><!--
+google_ad_client = "pub-0022581396450834";
+/* 300x250, created 8/24/09 mlb right code */
+google_ad_slot = "5893357379";
+google_ad_width = 300;
+google_ad_height = 250;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</div>
 <div class="widget">
     <ul>
         <li><a href="http://www.buzzerhut.com"><img border="0" src="http://www.buzzerhut.com/images/mainlogo_small.gif" width="154" height="42" alt="Promote Your Blog" title="Promote Your Blog"></a></li>
+        <li><a href="http://www.freeblogpromotion.com">Free Blog Promotion - Blog and Blog resource Directory</a></li>
     </ul>
 </div>
-<?php endif; ?>
 </div>
 <!-- sidebar south END -->
 

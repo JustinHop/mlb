@@ -21,7 +21,6 @@
 		<h2><a class="title" href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h2>
 		<div class="info">
 			<span class="date"><?php the_time(__('l F d H:i:s', 'inove')) /*TODO you must fix this*/ ?> PDT</span>
-			<?php if ($options['author']) : ?><span class="author"><?php the_author_posts_link(); ?></span><?php endif; ?>
 			<?php edit_post_link(__('Edit', 'inove'), '<span class="editpost">', '</span>'); ?>
 			<span class="comments"><?php comments_popup_link(__('No comments', 'inove'), __('1 comment', 'inove'), __('% comments', 'inove'), '', __('Comments off', 'inove')); ?></span>
 			<div class="fixed"></div>

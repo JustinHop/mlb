@@ -620,7 +620,10 @@ textarea {
 #northsidebar .widget, 
 #southsidebar .widget {
 	background:url(img/widgetsep.png) bottom no-repeat;
-	padding:10px 15px 16px;
+	/*padding:10px 15px 16px;*/
+	padding-bottom: 10px;
+	padding-left:   10px;
+	padding-right:   10px;
 }
 #centersidebar {
 	padding-bottom:6px;
@@ -934,7 +937,7 @@ a#gotop {
 	margin:0 -15px;
 }
 #respond {
-	padding:10px 0 0;
+	padding:10px;
 	font-size:11px;
 }
 #respond .row {
