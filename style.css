@@ -379,14 +379,16 @@ textarea {
 #post-ad {
     float: right;
     text-align: right;
-    width: 100%;
+    vertical-align: middle;
+    padding-top: 38px;
 }
 #bigsidevert{
     text-align: center;
 }
 #post-ad img {
     float: left;
-    padding-left: 15px;
+    padding-left: 20px;
+    padding-top: 5px;
 }
 .mlbinjury {
     height: 50px;
@@ -502,7 +504,7 @@ textarea {
 	background-position:0 -192px;
 }
 .post .content {
-	padding:5px 0 0 5px;
+	padding:5px /*0 0 5px*/;
 	margin-left: 15px;
 	line-height:145%;
 	overflow:hidden;
@@ -858,12 +860,12 @@ a#gotop {
 }
 .comment .pic {
 	background:url(img/commentpoint.png) 100% 33% no-repeat;
-	padding-right:14px;
+	/*padding-right:14px;*/
 	margin-top:10px;
 }
 .comment .name {
-	width:67px;
-	padding-right:14px;
+	/*width:67px;
+	padding-right:14px;*/
 	font-weight:bold;
 	overflow:hidden;
 }
@@ -910,7 +912,7 @@ a#gotop {
 }
 .admincomment .name {
 	padding-right:0;
-	padding-left:14px;
+	/*padding-left:14px;*/
 }
 .admincomment .info {
 	float:right;
@@ -1264,3 +1266,13 @@ a#gotop {
 }
 /* thread twitter END */
 
+.social_bookmark  {
+    /*height: 30px;*/
+    float: left;
+}
+.social_bookmark a  strong {
+    background: url('images/injure-20.gif') no-repeat top left;
+    padding-left: 25px ! important;
+    padding-bottom: 5px;
+    height: 20px;
+}

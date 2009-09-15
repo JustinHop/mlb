@@ -21,12 +21,12 @@
 			<?php endif; ?>
 			<div class="fixed"></div>
 		</div>
-		<div class="content">
-			<?php the_content(); ?>
-			<div class="fixed"></div>
-		</div>
-<div id="post-ad">
-<a href="<?php echo get_settings('home'); ?>/"><img src="http://mlbinjuryreport.com/wp-content/themes/mlb/images/injure-60.png"></a>
+<div class="content">
+	<?php the_content(); ?>
+    <div id="post-ad">
+<!--
+<a href="<?php echo get_settings('home'); ?> /">
+<img src="http://mlbinjuryreport.com/wp-content/themes/mlb/images/injure-50.gif"></a>--!>
 <script type="text/javascript"><!--
 google_ad_client = "pub-0022581396450834";
 /* 468x60, created 8/24/09 mlb halfbanner */
@@ -38,7 +38,9 @@ google_ad_height = 60;
 <script type="text/javascript"
 src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 </script>
+    </div>
 </div>
+	<div class="fixed"></div>
 <br/><br/>
 		<div class="under">
 			<?php if ($options['categories']) : ?><span class="categories"><?php _e('Categories: ', 'inove'); ?></span><span><?php the_category(', '); ?></span><?php endif; ?>
